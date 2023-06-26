@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+</head>
+<body>
+    <nav>
+        <h4>Database</h4>
+            <a href="/">Add</a> 
+            <a href="/retrieve">Retrieve</a>
+            <a href="/delete">Delete</a>
+    </nav>
+
+<div class="container mt-4">
+        <div class="card" style="width: 18rem;">            
+            <div class="card-header">New question:</div>    
+            <div class="card-body">
+                <form action="/auth/add" method="POST">
+                    <div class="mb-3">
+                        <label for="question-reg" class="form-label">Question</label>
+                        <input type="text" class="form-control" id="question-reg" name="question">                        
+                    </div>
+                    <div class="mb-3">
+                        <label for="correct-answer-reg" class="form-label">Correct answer</label>
+                        <input type="text" class="form-control" id="correct-answer-reg" name="correct_answer">                        
+                    </div>
+                    <div class="mb-3">
+                        <label for="incorrect-answer-1-reg" class="form-label">Incorrect answer 1</label>
+                        <input type="text" class="form-control" id="incorrect-answer-reg" name="incorrect_answer_1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="incorrect-answer-2-reg" class="form-label">Incorrect answer 2</label>
+                        <input type="text" class="form-control" id="incorrect-answer-reg" name="incorrect_answer_2">
+                    </div>
+                    <div class="mb-3">
+                        <label for="incorrect-answer-3-reg" class="form-label">Incorrect answer 3</label>
+                        <input type="text" class="form-control" id="incorrect-answer-reg" name="incorrect_answer_3">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
